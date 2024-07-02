@@ -300,7 +300,7 @@ function showResult() {
 function shareOnWhatsApp() {
   const resultText = document.getElementById('result-text').innerText;
   const result = resultText.substring(7); // Remove "Voce é: " do inicio
-  const shareMessage = `Fiz o teste e descobri que sou ${result}. Venha descobrir o seu! [link]`;
+  const shareMessage = `Fiz o teste e descobri que sou ${result}. Venha descobrir o seu! https://omarcelof.github.io/QualSantoVoce-/`;
   const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
   window.open(whatsappLink, '_blank');
 }
